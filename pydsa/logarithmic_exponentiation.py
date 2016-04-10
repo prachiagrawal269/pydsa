@@ -11,10 +11,9 @@ def logarithmic_exponentiation(base, exponent):
     """
         Performs logarithmic exponentiation in log(exponent) time.
 
-
-    Basic Idea: (a^b) : ((a^2)^(b/2))          if b is even
+    Basic Idea: (a^b) : ((a^2)^(b/2)) if b is even
                  a*((a^2)^((b-1)/2))  if b is odd
-                 1                     if b is 0
+                 1                    if b is 0
 
 
     >>> from pydsa import logarithmic_exponentiation
