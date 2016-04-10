@@ -7,10 +7,11 @@ It is currently in it's initial phase of development.
 .. toctree::
 :maxdepth: 3
 
-       install.rst
-       searching.rst
-       sorting.rst
-       license.rst
+   install.rst
+   searching.rst
+   sorting.rst
+   license.rst
+   exponentiation.rst
 
 
 Contributing
@@ -24,4 +25,3 @@ There are multiple ways you can contibute to Pydsa
 * Request/Submit new algorithms.
 
 Use github's Pull request/issues feature for all contributions.
-
