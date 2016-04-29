@@ -35,25 +35,24 @@ class BSTNode(object):
             self.inorderUtil(root.right)
         return self.inlist
 
-
     def preorder(self, root):
         self.inlist = []
         return self.preorderUtil(root)
 
     def preorderUtil(self, root):
-	if root:
-	    self.inlist.append(root.key)
-	    self.preorderUtil(root.left)
-	    self.preorderUtil(root.right)
-	return self.inlist
+        if root:
+            self.inlist.append(root.key)
+            self.preorderUtil(root.left)
+            self.preorderUtil(root.right)
+        return self.inlist
 
     def postorder(self, root):
         self.inlist = []
-        return self.postorderUtil( root)
+        return self.postorderUtil(root)
 
     def postorderUtil(self, root):
-    	if root:
+        if root:
             self.postorderUtil(root.left)
             self.postorderUtil(root.right)
             self.inlist.append(root.key)
-	return self.inlist    
+    return self.inlist
