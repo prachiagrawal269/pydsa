@@ -1,5 +1,5 @@
 # Binary Search Tree
-# Create a BST and insert elements and print Inorder traversal
+# Create a BST and insert elements and print all tree traversal
 
 
 class BSTNode(object):
@@ -11,6 +11,8 @@ class BSTNode(object):
         self.right = right
         self.key = key
         self.inlist = []
+        self.prelist = []
+        self.postlist = []
 
     def insert(self, node, key):
         if node is None:
@@ -22,8 +24,35 @@ class BSTNode(object):
         return node
 
     def inorder(self, root):
+        self.inlist = []
+        return self.inorderUtil(root)
+
+    def inorderUtil(self, root):
         if root:
-            self.inorder(root.left)
+            self.inorderUtil(root.left)
             self.inlist.append(root.key)
-            self.inorder(root.right)
+            self.inorderUtil(root.right)
         return self.inlist
+
+
+    def preorder(self, root):
+        self.inlist = []
+        return self.preorderUtil(root)
+
+    def preorderUtil(self, root):
+	if root:
+	    self.inlist.append(root.key)
+	    self.preorderUtil(root.left)
+	    self.preorderUtil(root.right)
+	return self.inlist
+
+    def postorder(self, root):
+        self.inlist = []
+        return self.postorderUtil( root)
+
+    def postorderUtil(self, root):
+    	if root:
+            self.postorderUtil(root.left)
+            self.postorderUtil(root.right)
+            self.inlist.append(root.key)
+	return self.inlist    
