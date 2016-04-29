@@ -54,4 +54,4 @@ class BSTNode(object):
             self.postorderUtil(root.left)
             self.postorderUtil(root.right)
             self.inlist.append(root.key)
-    return self.inlist
+        return self.inlist
