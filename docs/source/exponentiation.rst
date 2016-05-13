@@ -8,4 +8,4 @@ Exponentiation is an arithmetic operation on numbers. It is repeated multiplicat
 Logarithmic Exponentiation
 --------------
 
-.. autofunction:: pydsa.logarithmic_exponentiation
+.. autofunction:: pydsa.log_exp

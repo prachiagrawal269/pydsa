@@ -6,7 +6,7 @@
 # https://discuss.codechef.com/questions/20451/a-tutorial-on-fast-modulo-multiplication-exponential-squaring
 
 
-def logarithmic_exponentiation(base, exponent):
+def log_exp(base, exponent):
 
     """
         Performs logarithmic exponentiation in log(exponent) time.
@@ -16,10 +16,10 @@ def logarithmic_exponentiation(base, exponent):
                  1                    if b is 0
 
 
-    >>> from pydsa import logarithmic_exponentiation
+    >>> from pydsa import log_exp
     >>> a = 10
     >>> b = 2
-    >>> logarithmic_exponentiation(a, b)
+    >>> log_exp(a, b)
     100
 
     """
@@ -32,6 +32,6 @@ def logarithmic_exponentiation(base, exponent):
             result = result*base
 
         base = base*base
-        exponent = exponent/2
+        exponent = exponent//2
 
     return result

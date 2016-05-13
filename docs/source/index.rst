@@ -25,4 +25,3 @@ There are multiple ways you can contibute to Pydsa
 * Request/Submit new algorithms.
 
 Use github's Pull request/issues feature for all contributions.
-
