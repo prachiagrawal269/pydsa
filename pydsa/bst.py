@@ -1,5 +1,5 @@
 # Binary Search Tree
-# Create a BST and insert elements and print all tree traversal
+# Create a BST, insert elements into it and print all tree traversals
 
 
 class BSTNode(object):
